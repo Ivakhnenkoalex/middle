@@ -6,6 +6,3 @@ def ft_bin_num(a):
         x = x * 10
         a = a // 8
     return d
-
-
-print(ft_bin_num(32))
