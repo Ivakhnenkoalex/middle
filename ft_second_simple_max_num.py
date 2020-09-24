@@ -1,16 +1,17 @@
 def ft_len_num(a):
     b = 0
-    if a > 0 :
-        while a >= 1 :
+    if a > 0:
+        while a >= 1:
             b = b + 1
             a = a / 10
     if a == 0:
         b = 0
     if a < 0:
-        while a <= -1 :
+        while a <= -1:
             b = b + 1
             a = a / 10
     return b
+
 
 def ft_max_num(a):
     k = ft_len_num(a)
@@ -35,6 +36,7 @@ def ft_max_num(a):
                 m = c
     return m
 
+
 def ft_second_simple_max_num(a):
     n = ft_len_num(a)
     k = 0
@@ -48,8 +50,7 @@ def ft_second_simple_max_num(a):
     if k < a % 10:
         k = a % 10
         a //= 10
-    if m == k :
+    if m == k:
         return -1
     else:
         return k
-print(ft_second_simple_max_num(122))

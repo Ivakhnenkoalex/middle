@@ -19,10 +19,10 @@ def ft_rew_num(a):
             p = p + k
         return p
 
+
 def ft_mirror_num(a):
     c = ft_rew_num(a)
     if c == a:
         print(True)
     else:
         print(False)
-

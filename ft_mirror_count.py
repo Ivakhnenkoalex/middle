@@ -19,14 +19,13 @@ def ft_rew_num(a):
             p = p + k
         return p
 
+
 def ft_mirror_count(a):
     n = 0
-    i = 1 ## Если не включаем 1 то i = 2
-    while i <= a: ## Если не включаем а убрать =
+    i = 1
+    while i <= a:
         c = ft_rew_num(i)
         if c == i:
             n = n + 1
         i = i + 1
     return n
-
-

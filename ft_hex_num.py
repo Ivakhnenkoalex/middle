@@ -20,10 +20,10 @@ def ft_bin_num(a):
             list(d)
             d = d +
 
-
         d = d + c
         x = x * 10
         a = a // 16
     return d
+
 
 print(ft_bin_num(126))
