@@ -15,6 +15,6 @@ def ft_rev_num(a):
 def ft_mirror_num(a):
     c = ft_rev_num(a)
     if c == a:
-        print(True)
+        return True
     else:
-        print(False)
+        return False
