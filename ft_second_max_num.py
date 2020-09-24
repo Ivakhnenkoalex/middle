@@ -36,37 +36,16 @@ def ft_max_num(a):
     return m
 
 def ft_second_max_num(a):
-    c = ft_max_num(a)
-    k = ft_len_num(a)
-    x = 0
-    b = 1
-    l = a
-    if a > 0:
-        while k > 0:
-            k = k - 1
-            b = b + 1
-            x = (a % 10)
-            a = a // 10
-            if x == c:
-                z = k - b
-
-    elif a < 0:
+    n = ft_len_num(a)
+    k = 0
+    m = ft_max_num(a)
+    if a < 0:
         a = -a
-        while k > 0:
-            k = k - 1
-            b = b + 1
-            x = (a % 10)
-            a = a // 10
-            if x == c:
-                z = k - b
-    if z == 0:
-        l = l - c
-    else:
-        l = l - (c *( 10 ** z))
-    return l
-
-print(ft_second_max_num(132))
-
-
-
-
+        for i in range(n):
+            if a % 10 == m:
+                a //= 10
+            continue
+    if k < a % 10:
+        k = a % 10
+        a //= 10
+    return k
