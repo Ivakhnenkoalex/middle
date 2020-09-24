@@ -1,4 +1,4 @@
-def ft_rew_num(a):
+def ft_rev_num(a):
     p = 0
     k = 0
     if a == 0:
